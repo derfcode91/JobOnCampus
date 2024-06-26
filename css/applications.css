@@ -70,6 +70,7 @@ button:hover {
 .applications-list-container {
   max-width: 900px;
   margin: 20px auto;
+  overflow: hidden;
 }
 
 .applications-list-container h2 {
@@ -183,3 +184,47 @@ button:hover {
 /* Login Section */
 
 /* Penutup Login Section */
+
+
+
+:root {
+  /* --primary: #18253c; */
+  --primary: #008000;
+  --secondary:  #c22b26;
+
+}
+
+.applications-list-container-footer {
+  transform: translateY(8rem);
+  transition: .5s ease-in-out;
+  padding-top: 1rem;
+}
+
+
+.applications-list-container:hover .applications-list-container-footer {
+  transform: translateY(0);
+}
+
+.applications-list-container-footer {
+  transition-delay: .3s;
+}
+
+
+.btn {
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+
+}
+
+.btn-accept {
+
+  background-color: var(--primary);
+  
+}
+
+.btn-reject {
+
+  background-color: var(--secondary);
+}
+

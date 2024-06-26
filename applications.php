@@ -68,10 +68,15 @@ $conn->close();
             </div>
             <?php if ($application['status'] === 'accepted'): ?>
               <a href="#" class="details-btn">More Details</a>
+              <a href="#"  class="applications-list-container-footer">
+                    <button class="btn btn-accept">Accept</button>
+                    <button class="btn btn-reject">Reject</button>
+            </a>
             <?php endif; ?>
             <span class="application-status <?php echo htmlspecialchars($application['status']); ?>">
               <?php echo ucfirst(htmlspecialchars($application['status'])); ?>
             </span>
+            
           </div>
         <?php endforeach; ?>
       </div>
